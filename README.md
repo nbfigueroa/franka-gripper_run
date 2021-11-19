@@ -11,7 +11,7 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build .
 ```
 
-Usage: 
+Usage (from terminal): 
 
 To open gripper:
 
@@ -23,4 +23,13 @@ To close gripper:
 
 ```bash
 ./examples/gripper_run  172.16.0.2 0
+```
+
+
+Usage from ROS:
+
+Either you write a node that wraps these commands (i.e. add it to franka_ros) or you could call this line from a python script as follows:
+
+```python
+proc = subprocess.Popen(["/home/thavishi/code/libfranka/build/examples/gripper_run", "172.16.0.2", "1"])
 ```
