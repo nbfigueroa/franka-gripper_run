@@ -11,7 +11,7 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build .
 ```
 
-Usage (from terminal): 
+**Usage (from terminal):** 
 
 To open gripper:
 
@@ -26,7 +26,7 @@ To close gripper:
 ```
 
 
-Usage from ROS:
+**Usage from ROS:**
 
 Either you write a node that wraps these commands (i.e. add it to franka_ros) or you could call this line from a python script as follows:
 
