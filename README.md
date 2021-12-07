@@ -35,5 +35,5 @@ import subprocess
 proc = subprocess.Popen(["/home/panda2/franka_gripper_run/build/franka_gripper_run", "1"])
 ```
 
-**Usage from ROS**
+**Usage from ROS**  
 Write a node that wraps these commands (i.e. add it to [franka_interactive_controllers](https://github.com/nbfigueroa/franka_interactive_controllers) == TODO NEXT). 
