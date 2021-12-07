@@ -2,7 +2,7 @@
 Standalone non-ROS executable to open/close gripper.
 
 
-Installation:
+**Installation**
 
 1. Clone repo
 2. Compile
@@ -13,7 +13,7 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build .
 ```
 
-**Usage (from terminal):** 
+**Usage (from terminal)** 
 
 To open gripper:
 
@@ -27,11 +27,13 @@ To close gripper:
 ./build/franka_gripper_run 0
 ```
 
-**Usage from PYTHON:**
-
-Either you write a node that wraps these commands (i.e. add it to [franka_interactive_controllers](https://github.com/nbfigueroa/franka_interactive_controllers) == TODO NEXT) or you could call this line from a python script as follows:
+**Usage from PYTHON**
+You could call this line from a python script as follows:
 
 ```python
 import subprocess 
 proc = subprocess.Popen(["/home/panda2/franka_gripper_run/gripper_run", "1"])
 ```
+
+**Usage from ROS**
+Write a node that wraps these commands (i.e. add it to [franka_interactive_controllers](https://github.com/nbfigueroa/franka_interactive_controllers) == TODO NEXT). 
