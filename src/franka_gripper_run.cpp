@@ -6,14 +6,14 @@
 #include <franka/gripper.h>
 
 int main(int argc, char** argv) {
-  if (argc != 3) {
+  if (argc != 2) {
     std::cerr << "Usage: " << argv[0] << " <gripper-hostname> <open/close>" << std::endl;
     return -1;
   }
   try {
-    franka::Gripper gripper(argv[1]);
-
-    std::stringstream ss(argv[2]);
+    std::string franka_ip = "172.16.0.2";
+    franka::Gripper gripper(franka_ip);
+    std::stringstream ss(argv[1]);
     bool open_close;
     if (!(ss >> open_close)) {
       std::cerr << "<open/close> must be either 0 (close) or 1 (open)." << std::endl;
