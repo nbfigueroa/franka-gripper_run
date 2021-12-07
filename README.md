@@ -7,6 +7,7 @@ Standalone non-ROS C++ executable to open/close gripper.
 1. Clone repo
 2. Compile
 ```bash
+cd ~/franka_gripper_run/
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -18,12 +19,14 @@ cmake --build .
 To open gripper:
 
 ```bash
+cd ~/franka_gripper_run/
 ./build/franka_gripper_run 1
 ```
 
 To close gripper:
 
 ```bash
+cd ~/franka_gripper_run/
 ./build/franka_gripper_run 0
 ```
 
@@ -33,6 +36,15 @@ You could call this line from a python script as follows:
 ```python
 import subprocess 
 proc = subprocess.Popen(["/home/panda2/franka_gripper_run/build/franka_gripper_run", "1"])
+```
+
+**Usage from PYTHON-GUI**
+In the ``./python_gui`` folder there is a simple GUI that enables open/close the gripper by pressing a button, as follows:
+
+Run:
+```bash
+cd ~/franka_gripper_run/
+python3 python_gui/gui_gripper_run.py
 ```
 
 **Usage from ROS**  
