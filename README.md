@@ -1,4 +1,6 @@
 # franka_gripper_run
+Standalone non-ROS executable to open/close gripper.
+
 
 Installation:
 
@@ -25,9 +27,9 @@ To close gripper:
 ./build/franka_gripper_run 0
 ```
 
-**Usage from ROS:**
+**Usage from PYTHON:**
 
-Either you write a node that wraps these commands (i.e. add it to franka_ros) or you could call this line from a python script as follows:
+Either you write a node that wraps these commands (i.e. add it to [franka_interactive_controllers](https://github.com/nbfigueroa/franka_interactive_controllers) == TODO NEXT) or you could call this line from a python script as follows:
 
 ```python
 import subprocess 
