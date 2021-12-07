@@ -32,7 +32,7 @@ You could call this line from a python script as follows:
 
 ```python
 import subprocess 
-proc = subprocess.Popen(["/home/panda2/franka_gripper_run/gripper_run", "1"])
+proc = subprocess.Popen(["/home/panda2/franka_gripper_run/build/franka_gripper_run", "1"])
 ```
 
 **Usage from ROS**
