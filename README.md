@@ -56,3 +56,5 @@ Note: C++ executable has to be compiled first!
 
 **Usage from ROS**  
 Write a node that wraps these commands (i.e. add it to [franka_interactive_controllers](https://github.com/nbfigueroa/franka_interactive_controllers) == TODO NEXT). 
+
+Author: [Nadia Figueroa](https://nbfigueroa.github.io/)
