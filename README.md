@@ -1,5 +1,5 @@
 # franka_gripper_run
-Standalone non-ROS executable to open/close gripper.
+Standalone non-ROS C++ executable to open/close gripper.
 
 
 **Installation**
