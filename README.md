@@ -41,6 +41,10 @@ proc = subprocess.Popen(["/home/panda2/franka_gripper_run/build/franka_gripper_r
 **Usage from PYTHON-GUI**
 In the ``./python_gui`` folder there is a simple GUI that enables open/close the gripper by pressing a button, as follows:
 
+ <p align="center"><img src="https://github.com/nbfigueroa/franka_gripper_run/blob/main/img/gripper_gui.png" width="500"></>
+  <p align="center">
+  <img src="https://github.com/nbfigueroa/franka_gripper_run/blob/main/img/gripper_gui_close.png" width="250"><img src="https://github.com/nbfigueroa/franka_gripper_run/blob/main/img/gripper_gui_open.png" width="250"></>
+
 Run:
 ```bash
 cd ~/franka_gripper_run/
